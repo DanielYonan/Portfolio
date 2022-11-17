@@ -7,7 +7,7 @@ $to = "daniel-y@live.se";
 $subject = "Mail from website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@example.com";
+"CC: ";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
